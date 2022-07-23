@@ -4,7 +4,7 @@ namespace Seminar9
     {
         public static void PrintCurrentList(List<int> numbers)
         {
-            Console.Write("\n\n\tНатуральные числа в промежутке от первого и второго значений: ");
+            Console.Write("\n\n\tРќР°С‚СѓСЂР°Р»СЊРЅС‹Рµ С‡РёСЃР»Р° РІ РїСЂРѕРјРµР¶СѓС‚РєРµ РѕС‚ РїРµСЂРІРѕРіРѕ Рё РІС‚РѕСЂРѕРіРѕ Р·РЅР°С‡РµРЅРёР№: ");
             for (int i = 0; i < numbers.Count - 1; i++)
             {
                 Console.Write($"{numbers[i]}, ");
@@ -14,18 +14,19 @@ namespace Seminar9
 
         public static void FillDataForList()
         {
-            Console.Write("\n\tПожалуйста введите минимальное значение элемента\n" +
-                "\tв виде натурального числа: ");
+            Console.Write(
+                "\n\tРџРѕР¶Р°Р»СѓР№СЃС‚Р° РІРІРµРґРёС‚Рµ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°\n"
+                    + "\tРІ РІРёРґРµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРіРѕ С‡РёСЃР»Р°: "
+            );
             string? startDigit = String.Empty;
             startDigit = Console.ReadLine();
             Console.Write(
-                "\n\tПожалуйста введите максимальное значение элемента\n"
-                    + "\tв виде натурального числа: "
+                "\n\tРџРѕР¶Р°Р»СѓР№СЃС‚Р° РІРІРµРґРёС‚Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°\n"
+                    + "\tРІ РІРёРґРµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРіРѕ С‡РёСЃР»Р°: "
             );
             string? endDigit = String.Empty;
             endDigit = Console.ReadLine();
-            if (!String.IsNullOrEmpty(startDigit)
-                && !String.IsNullOrEmpty(endDigit))
+            if (!String.IsNullOrEmpty(startDigit) && !String.IsNullOrEmpty(endDigit))
             {
                 int startValue = Convert.ToInt32(startDigit.ToString());
                 int endValue = Convert.ToInt32(endDigit.ToString());
@@ -36,18 +37,22 @@ namespace Seminar9
             {
                 Decisions.FirstNumber = 1;
                 Decisions.SecondNumber = 2;
-                Console.Write("\n\tВаш ввод не соответствует требованиям!\n" +
-                        $"\tЗа значение нижней границы принято число: {Decisions.FirstNumber}");
-                Console.Write($"\n\tЗа значение верхней границы принято число: {Decisions.SecondNumber}");
+                Console.Write(
+                    "\n\tР’Р°С€ РІРІРѕРґ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С‚СЂРµР±РѕРІР°РЅРёСЏРј!\n"
+                        + $"\tР—Р° Р·РЅР°С‡РµРЅРёРµ РЅРёР¶РЅРµР№ РіСЂР°РЅРёС†С‹ РїСЂРёРЅСЏС‚Рѕ С‡РёСЃР»Рѕ: {Decisions.FirstNumber}"
+                );
+                Console.Write(
+                    $"\n\tР—Р° Р·РЅР°С‡РµРЅРёРµ РІРµСЂС…РЅРµР№ РіСЂР°РЅРёС†С‹ РїСЂРёРЅСЏС‚Рѕ С‡РёСЃР»Рѕ: {Decisions.SecondNumber}"
+                );
             }
         }
 
         public static bool ChoiseEscOrEnter(bool answer)
         {
-            Console.WriteLine("\n\tВаш ввод не соответствует требованиям!");
+            Console.WriteLine("\n\tР’Р°С€ РІРІРѕРґ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С‚СЂРµР±РѕРІР°РЅРёСЏРј!");
             Console.Write(
-                "\n\tПожалуста нажмите любую клавишу для повторения операции\n"
-                    + "\tили Escape для выхода в основное меню: "
+                "\n\tРџРѕР¶Р°Р»СѓСЃС‚Р° РЅР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ РґР»СЏ РїРѕРІС‚РѕСЂРµРЅРёСЏ РѕРїРµСЂР°С†РёРё\n"
+                    + "\tРёР»Рё Escape РґР»СЏ РІС‹С…РѕРґР° РІ РѕСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ: "
             );
             if (Console.ReadKey(true).Key == ConsoleKey.Escape)
             {

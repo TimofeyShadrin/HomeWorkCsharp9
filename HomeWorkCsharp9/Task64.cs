@@ -17,7 +17,7 @@ namespace Seminar9
                     {
                         Methods.PrintCurrentList(Decisions.numbers);
                         Console.Write(
-                            "\n\tПожалуста нажмите любую клавишу для возврата в основное меню: "
+                            "\n\tРџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ РґР»СЏ РІРѕР·РІСЂР°С‚Р° РІ РѕСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ: "
                         );
                         Console.ReadKey();
                         Console.Clear();

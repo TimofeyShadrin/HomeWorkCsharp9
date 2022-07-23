@@ -18,10 +18,12 @@ namespace Seminar9
                         Methods.PrintCurrentList(Decisions.numbers);
                         Decisions.result = 0;
                         Decisions.SumOfListElements();
-                        Console.WriteLine($"\tСумму натуральных элементов в указанном промежутке равна = {Decisions.result}");
+                        Console.WriteLine(
+                            $"\tРЎСѓРјРјСѓ РЅР°С‚СѓСЂР°Р»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РІ СѓРєР°Р·Р°РЅРЅРѕРј РїСЂРѕРјРµР¶СѓС‚РєРµ СЂР°РІРЅР° = {Decisions.result}"
+                        );
 
                         Console.Write(
-                            "\n\tПожалуста нажмите любую клавишу для возврата в основное меню: "
+                            "\n\tРџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ РґР»СЏ РІРѕР·РІСЂР°С‚Р° РІ РѕСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ: "
                         );
                         Console.ReadKey();
                         Console.Clear();

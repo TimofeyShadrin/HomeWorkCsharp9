@@ -12,7 +12,8 @@ namespace Seminar9
             get { return firstNumber; }
             set
             {
-                if (value > 0) firstNumber = value;
+                if (value > 0)
+                    firstNumber = value;
                 else
                 {
                     firstNumber = 1;
@@ -25,12 +26,15 @@ namespace Seminar9
             get { return secondNumber; }
             set
             {
-                if (value > firstNumber) secondNumber = value;
+                if (value > firstNumber)
+                    secondNumber = value;
                 else
                 {
                     secondNumber = firstNumber + Math.Abs(value) + 1;
-                    Console.Write("\n\tВаш ввод не соответствует требованиям!\n" +
-                        $"\tЗа значение верхней границы принято число: {secondNumber}");
+                    Console.Write(
+                        "\n\tР’Р°С€ РІРІРѕРґ РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ С‚СЂРµР±РѕРІР°РЅРёСЏРј!\n"
+                            + $"\tР—Р° Р·РЅР°С‡РµРЅРёРµ РІРµСЂС…РЅРµР№ РіСЂР°РЅРёС†С‹ РїСЂРёРЅСЏС‚Рѕ С‡РёСЃР»Рѕ: {secondNumber}"
+                    );
                 }
             }
         }
