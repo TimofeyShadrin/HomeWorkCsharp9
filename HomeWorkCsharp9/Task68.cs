@@ -1,6 +1,6 @@
 ﻿namespace Seminar9
 {
-    class Task68
+    class Task68 : Ackerman
     {
         public static void ReturnTask68()
         {
@@ -10,13 +10,13 @@
                 Console.Clear();
                 try
                 {
-                    Ackerman.FillDataForAckerman();
-                    uint result = Ackerman.AckermanFunction(Ackerman.FirstValue, Ackerman.SecondValue);
+                    FillDataForAckerman();
+                    uint result = AckermanFunction(FirstValue, SecondValue);
                     Console.WriteLine($"\n\tРезультат вычисления функции Аккермана = {result}");
 
                     Console.Write(
-                            "\n\tПожалуста нажмите любую клавишу для возврата в основное меню: "
-                        );
+                        "\n\tПожалуста нажмите любую клавишу для возврата в основное меню: "
+                    );
                     Console.ReadKey();
                     Console.Clear();
                     break;

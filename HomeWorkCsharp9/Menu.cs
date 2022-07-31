@@ -51,6 +51,13 @@ namespace Seminar9
             Console.ResetColor();
         }
 
+        /// <summary>
+        /// Метод для выделения пукта в виде прямоугольника
+        /// </summary>
+        /// <param name="left">Отступ слева</param>
+        /// <param name="top">Отступ сверху</param>
+        /// <param name="lenght">Длина прямоугольника</param>
+        /// <param name="height">Высота прямоугольника</param>
         public static void Box(int left, int top, int lenght, int height)
         {
             HorizontalLine(left, top, lenght);
