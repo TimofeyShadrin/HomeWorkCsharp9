@@ -4,8 +4,13 @@
     {
         public static void Main()
         {
+            string fullPath = Environment.GetCommandLineArgs()[0]; // Указываем путь к файлу
+            Console.Clear();
+            Console.WriteLine($"\n\t{fullPath}");
+            Console.ReadKey();
             Navigation();
         }
+
         public static int answer = 0;
 
         public static void Navigation()
