@@ -1,6 +1,6 @@
 ﻿namespace Seminar9
 {
-    class Ackerman
+    abstract class Ackerman
     {
         private static uint firstValue = 0;
         private static uint secondValue = 0;
